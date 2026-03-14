@@ -3,100 +3,155 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Midnight City RP</title>
 
 <style>
 
 body{
 margin:0;
-font-family:Arial, sans-serif;
+font-family:Arial, Helvetica, sans-serif;
+background:#05070d;
 color:white;
-background:#0a0f1f;
 }
 
-header{
-background:#0f172a;
-padding:20px;
-text-align:center;
-}
-
-nav a{
-color:#38bdf8;
-margin:0 15px;
-text-decoration:none;
-font-weight:bold;
-}
+/* animated neon skyline background */
 
 .hero{
-height:90vh;
-background:url("https://images.unsplash.com/photo-1519501025264-65ba15a82390") center/cover no-repeat;
+height:100vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
+background:
+radial-gradient(circle at 20% 40%, rgba(120,0,255,0.4), transparent 40%),
+radial-gradient(circle at 80% 20%, rgba(0,200,255,0.4), transparent 40%),
+linear-gradient(#02030a,#05070d);
+position:relative;
+overflow:hidden;
 }
 
+.hero::after{
+content:"";
+position:absolute;
+bottom:0;
+width:100%;
+height:300px;
+background:
+linear-gradient(to top,#000 10%,transparent),
+repeating-linear-gradient(
+90deg,
+rgba(255,255,255,0.05) 0px,
+rgba(255,255,255,0.05) 2px,
+transparent 2px,
+transparent 40px
+);
+opacity:0.4;
+}
+
+/* title */
+
 .hero h1{
-font-size:60px;
-text-shadow:0 0 15px #38bdf8;
+font-size:70px;
+color:#38bdf8;
+text-shadow:
+0 0 10px #38bdf8,
+0 0 30px #38bdf8,
+0 0 60px #38bdf8;
+margin:0;
 }
 
 .hero p{
 font-size:20px;
+margin-top:10px;
+opacity:0.8;
 }
 
-button{
-background:#38bdf8;
-border:none;
+/* buttons */
+
+.buttons{
+margin-top:30px;
+}
+
+.btn{
+display:inline-block;
 padding:15px 30px;
 margin:10px;
-border-radius:6px;
+border-radius:8px;
+background:#38bdf8;
+color:black;
 font-weight:bold;
-cursor:pointer;
+text-decoration:none;
+transition:0.3s;
 }
+
+.btn:hover{
+background:#0ea5e9;
+transform:scale(1.05);
+}
+
+/* sections */
 
 section{
-padding:60px 20px;
-max-width:1100px;
+padding:80px 20px;
+max-width:1200px;
 margin:auto;
+}
+
+h2{
 text-align:center;
+margin-bottom:40px;
+color:#38bdf8;
 }
 
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
-}
-
-.gallery img{
-width:100%;
-border-radius:8px;
-}
+/* cards */
 
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+gap:25px;
 }
 
 .card{
-background:#1e293b;
+background:#0f172a;
 padding:25px;
-border-radius:8px;
+border-radius:10px;
+text-align:center;
 }
 
-.status{
-color:#ff4d4d;
-font-size:28px;
-font-weight:bold;
-margin:20px 0;
+.card:hover{
+transform:translateY(-5px);
 }
+
+/* gallery */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+/* donate */
+
+.donate{
+text-align:center;
+background:#0f172a;
+padding:40px;
+border-radius:10px;
+}
+
+/* footer */
 
 footer{
-background:#0f172a;
-padding:20px;
 text-align:center;
+padding:40px;
+opacity:0.6;
 }
 
 </style>
@@ -104,86 +159,80 @@ text-align:center;
 
 <body>
 
-<header>
-<h2>🌃 Midnight City Roleplay</h2>
-<nav>
-<a href="#home">Home</a>
-<a href="#gallery">Gallery</a>
-<a href="#donate">Donations</a>
-<a href="#community">Community</a>
-</nav>
-</header>
+<div class="hero">
 
-<section class="hero" id="home">
 <h1>Midnight City RP</h1>
-<p>The ultimate FiveM roleplay experience</p>
 
-<div class="status">
-🚧 Server Currently Closed
-</div>
+<p>Server currently closed — Join our Discord for updates</p>
 
-<a href="https://discord.gg/midnightcityrpv3">
-<button>💬 Join Discord</button>
-</a>
+<div class="buttons">
 
-</section>
+<a class="btn" href="https://discord.gg/midnightcityrpv3">Join Discord</a>
 
-<section id="gallery">
-
-<h2>🖼 Server Gallery</h2>
-
-<div class="gallery">
-
-<img src="https://via.placeholder.com/400x250">
-<img src="https://via.placeholder.com/400x250">
-<img src="https://via.placeholder.com/400x250">
-<img src="https://via.placeholder.com/400x250">
+<a class="btn" href="#">Join Server</a>
 
 </div>
 
-</section>
+</div>
 
-<section id="donate">
+<section>
 
-<h2>💰 Support The Server</h2>
-
-<p>Your support helps keep Midnight City RP running.</p>
+<h2>Departments</h2>
 
 <div class="cards">
 
 <div class="card">
-<h3>Bronze Supporter</h3>
-<p>Coming soon</p>
+<h3>Police</h3>
+<p>Protect the city and enforce the law.</p>
 </div>
 
 <div class="card">
-<h3>Silver Supporter</h3>
-<p>Coming soon</p>
+<h3>EMS</h3>
+<p>Save lives and respond to emergencies.</p>
 </div>
 
 <div class="card">
-<h3>Gold Supporter</h3>
-<p>Coming soon</p>
+<h3>Civilians</h3>
+<p>Create your own story in Midnight City.</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="community">
+<section>
 
-<h2>💬 Community</h2>
+<h2>Gallery</h2>
 
-<p>Join our Discord for updates, announcements, and events.</p>
+<div class="gallery">
 
-<a href="https://discord.gg/midnightcityrpv3">
-<button>Join Discord</button>
-</a>
+<img src="gallery1.jpg">
+<img src="gallery2.jpg">
+<img src="gallery3.jpg">
+<img src="gallery4.jpg">
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Support The Server</h2>
+
+<div class="donate">
+
+<p>Help support Midnight City RP and keep the server running.</p>
+
+<a class="btn" href="#">Donate</a>
+
+</div>
 
 </section>
 
 <footer>
-<p>© Midnight City RP</p>
+
+© Midnight City RP
+
 </footer>
 
 </body>
