@@ -184,3 +184,52 @@ display:none;
 .department.active{
 display:block;
 }
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:#050b12;
+}
+
+.hero-content h1{
+font-size:70px;
+color:#00eaff;
+text-shadow:0 0 20px #00eaff;
+margin-bottom:20px;
+}
+
+.hero-content p{
+color:#cfd8dc;
+font-size:18px;
+margin-bottom:40px;
+}
+
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+}
+
+.btn{
+padding:14px 25px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+
+.blue{
+background:#00eaff;
+color:black;
+}
+
+.purple{
+background:#7a00ff;
+color:white;
+}
+
+.pink{
+background:#ff3ea5;
+color:white;
+}
