@@ -3,237 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Midnight City RP</title>
-
-<style>
-
-body{
-margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:#05070d;
-color:white;
-}
-
-/* animated neon skyline background */
-
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-background:
-radial-gradient(circle at 20% 40%, rgba(120,0,255,0.4), transparent 40%),
-radial-gradient(circle at 80% 20%, rgba(0,200,255,0.4), transparent 40%),
-linear-gradient(#02030a,#05070d);
-position:relative;
-overflow:hidden;
-}
-
-.hero::after{
-content:"";
-position:absolute;
-bottom:0;
-width:100%;
-height:300px;
-background:
-linear-gradient(to top,#000 10%,transparent),
-repeating-linear-gradient(
-90deg,
-rgba(255,255,255,0.05) 0px,
-rgba(255,255,255,0.05) 2px,
-transparent 2px,
-transparent 40px
-);
-opacity:0.4;
-}
-
-/* title */
-
-.hero h1{
-font-size:70px;
-color:#38bdf8;
-text-shadow:
-0 0 10px #38bdf8,
-0 0 30px #38bdf8,
-0 0 60px #38bdf8;
-margin:0;
-}
-
-.hero p{
-font-size:20px;
-margin-top:10px;
-opacity:0.8;
-}
-
-/* buttons */
-
-.buttons{
-margin-top:30px;
-}
-
-.btn{
-display:inline-block;
-padding:15px 30px;
-margin:10px;
-border-radius:8px;
-background:#38bdf8;
-color:black;
-font-weight:bold;
-text-decoration:none;
-transition:0.3s;
-}
-
-.btn:hover{
-background:#0ea5e9;
-transform:scale(1.05);
-}
-
-/* sections */
-
-section{
-padding:80px 20px;
-max-width:1200px;
-margin:auto;
-}
-
-h2{
-text-align:center;
-margin-bottom:40px;
-color:#38bdf8;
-}
-
-/* cards */
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:#0f172a;
-padding:25px;
-border-radius:10px;
-text-align:center;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-/* gallery */
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:20px;
-}
-
-.gallery img{
-width:100%;
-border-radius:10px;
-}
-
-/* donate */
-
-.donate{
-text-align:center;
-background:#0f172a;
-padding:40px;
-border-radius:10px;
-}
-
-/* footer */
-
-footer{
-text-align:center;
-padding:40px;
-opacity:0.6;
-}
-
-</style>
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<div class="hero">
+<nav class="navbar">
+<div class="logo">Midnight City RP</div>
 
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="applications.html">Applications</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+
+<div class="nav-buttons">
+<a class="discord" href="#">Join Discord</a>
+<a class="support" href="#">Support Server</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="hero-content">
 <h1>Midnight City RP</h1>
+<p>
+Experience immersive GTA V roleplay with police, EMS,
+and civilian opportunities.
+</p>
 
-<p>Server currently closed — Join our Discord for updates</p>
-
-<div class="buttons">
-
-<a class="btn" href="https://discord.gg/midnightcityrpv3">Join Discord</a>
-
-<a class="btn" href="#">Join Server</a>
-
+<div class="hero-buttons">
+<a class="btn blue" href="applications.html">Apply Now</a>
+<a class="btn purple" href="gallery.html">View Gallery</a>
+<a class="btn pink" href="#">Join Discord</a>
 </div>
-
 </div>
-
-<section>
-
-<h2>Departments</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Police</h3>
-<p>Protect the city and enforce the law.</p>
-</div>
-
-<div class="card">
-<h3>EMS</h3>
-<p>Save lives and respond to emergencies.</p>
-</div>
-
-<div class="card">
-<h3>Civilians</h3>
-<p>Create your own story in Midnight City.</p>
-</div>
-
-</div>
-
 </section>
 
-<section>
-
-<h2>Gallery</h2>
-
-<div class="gallery">
-
-<img src="https://cdn.discordapp.com/attachments/1452996711193772317/1482019705655922698/Screenshot_2026-03-13_161658.png?ex=69b616a8&is=69b4c528&hm=33bb3edc3bde4e8f4ca17b1f3b1bb61461cbd63d896c210df08cea8c29c1d228&">
-<img src="https://cdn.discordapp.com/attachments/1452996711193772317/1482019121020272650/Screenshot_2026-03-13_161411.png?ex=69b6161d&is=69b4c49d&hm=f2b6ac8c053a31e4ad142591bf9b23888940cc6244b7bee95aa5ed1a1a875f59&">
-<img src="https://cdn.discordapp.com/attachments/1452996711193772317/1481562507049963631/Screenshot_2026-03-12_095758.png?ex=69b6671b&is=69b5159b&hm=1ccd4559a5f53db920ac8c19930cd4dde40b51d95d6874480ad5cb8a3e2b67de&">
-<img src="https://cdn.discordapp.com/attachments/1452996711193772317/1482019826200346776/Screenshot_2026-03-13_161729.png?ex=69b616c5&is=69b4c545&hm=557b6d338304a6ad7b72755e4be209faa62ed11d951ced64f73ce2c29e25f6e8&">
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Support The Server</h2>
-
-<div class="donate">
-
-<p>Help support Midnight City RP and keep the server running.</p>
-
-<a class="btn" href="#">Donate</a>
-
-</div>
-
-</section>
-
-<footer>
-
-© Midnight City RP
-
-</footer>
-
+<script src="js/script.js"></script>
 </body>
 </html>
