@@ -1,32 +1,135 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Applications</title>
+<title>Department Applications</title>
 <link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
 </head>
+
 <body>
 
-<h1 style="text-align:center">Server Applications</h1>
-
-<div class="apps">
-
-<div class="card">
-<h2>Police</h2>
-<p>Join the police department.</p>
-<a href="#">Apply</a>
+<div class="page-title">
+<h1>Department Applications</h1>
+<p>Choose a department and submit your application.</p>
 </div>
 
-<div class="card">
-<h2>EMS</h2>
-<p>Join emergency medical services.</p>
-<a href="#">Apply</a>
+<div class="tabs">
+
+<button class="tab active" onclick="showForm('lspd')">LSPD</button>
+<button class="tab" onclick="showForm('bcso')">BCSO</button>
+<button class="tab" onclick="showForm('sast')">SAST</button>
+<button class="tab" onclick="showForm('safd')">SAFD</button>
+
 </div>
 
-<div class="card">
-<h2>Staff</h2>
-<p>Apply to become staff.</p>
-<a href="#">Apply</a>
+<!-- LSPD -->
+
+<div id="lspd" class="form-container department active">
+
+<h2>Los Santos Police Department</h2>
+
+<div class="form-grid">
+<input placeholder="Full Name">
+<input placeholder="Age">
+
+<input placeholder="Discord Username">
+<input placeholder="Timezone">
+
+<input placeholder="Years of RP Experience">
+<input placeholder="Server Ban History">
 </div>
+
+<textarea placeholder="Why do you want to join LSPD?"></textarea>
+
+<textarea placeholder="Explain the role of LSPD"></textarea>
+
+<textarea placeholder="Vehicle pursuit scenario response"></textarea>
+
+<button>Submit Application</button>
+
+</div>
+
+
+<!-- BCSO -->
+
+<div id="bcso" class="form-container department">
+
+<h2>Blaine County Sheriff's Office</h2>
+
+<div class="form-grid">
+<input placeholder="Full Name">
+<input placeholder="Age">
+
+<input placeholder="Discord Username">
+<input placeholder="Timezone">
+
+<input placeholder="Years of RP Experience">
+<input placeholder="Server Ban History">
+</div>
+
+<textarea placeholder="Why do you want to join BCSO?"></textarea>
+
+<textarea placeholder="Explain the role of BCSO"></textarea>
+
+<textarea placeholder="Traffic stop scenario"></textarea>
+
+<button>Submit Application</button>
+
+</div>
+
+
+<!-- SAST -->
+
+<div id="sast" class="form-container department">
+
+<h2>San Andreas State Troopers</h2>
+
+<div class="form-grid">
+<input placeholder="Full Name">
+<input placeholder="Age">
+
+<input placeholder="Discord Username">
+<input placeholder="Timezone">
+
+<input placeholder="Years of RP Experience">
+<input placeholder="Server Ban History">
+</div>
+
+<textarea placeholder="Why do you want to join SAST?"></textarea>
+
+<textarea placeholder="Explain the role of SAST"></textarea>
+
+<textarea placeholder="Highway pursuit scenario"></textarea>
+
+<button>Submit Application</button>
+
+</div>
+
+
+<!-- SAFD -->
+
+<div id="safd" class="form-container department">
+
+<h2>San Andreas Fire Department</h2>
+
+<div class="form-grid">
+<input placeholder="Full Name">
+<input placeholder="Age">
+
+<input placeholder="Discord Username">
+<input placeholder="Timezone">
+
+<input placeholder="Years of RP Experience">
+<input placeholder="Server Ban History">
+</div>
+
+<textarea placeholder="Why do you want to join SAFD?"></textarea>
+
+<textarea placeholder="Explain the role of SAFD"></textarea>
+
+<textarea placeholder="Emergency response scenario"></textarea>
+
+<button>Submit Application</button>
 
 </div>
 
